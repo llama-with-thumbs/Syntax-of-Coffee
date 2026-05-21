@@ -1,0 +1,11 @@
+# Rendering engine: manual layout + native SVG/PNG export (no system binary needed)
+matplotlib>=3.7
+
+# Icon rasterization (Lucide SVG -> PNG). svglib + reportlab is pure-pip and works
+# on Windows with no system libraries, so it is the default backend.
+svglib>=1.5
+reportlab>=4.0
+
+# OPTIONAL: cleaner transparent rasterization. Used automatically if importable,
+# but on Windows it needs the Cairo DLLs, so it is left commented out by default.
+# cairosvg>=2.7
